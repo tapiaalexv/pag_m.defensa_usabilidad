@@ -47,7 +47,7 @@ function Footer() {
                         onClick={() => window.open('https://www.youtube.com/user/DefensaEcuador')}
                     />
                 </div>
-                {/*Parrafo direccion*/}
+                {/*Parrafo*/}
                 <p style={{lineHeight: '20px', color: "white", textAlign: 'right', marginBottom:'5px'}}>
                     Calle la Exposición S4-71 y Benigno Vela<br/>
                     Código Postal: 170403 / Quito - Ecuador<br/>
