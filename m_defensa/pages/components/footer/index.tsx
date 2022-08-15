@@ -4,6 +4,7 @@ function Footer() {
     const router = useRouter();
     return (
         <footer>
+            {/*Logo Gobierno - Extremo Izquierdo*/}
             <img
                 src={'logoGobierno.png'}
                 height={'130px'}
@@ -13,6 +14,7 @@ function Footer() {
                     padding: '5px 5px 5px 12px',
                 }}
             />
+            {/*Enlaces y direccion - Extremo Derecho*/}
             <div
                 style={{
                     marginRight: '15px'
