@@ -8,7 +8,7 @@ function Footer() {
             <img
                 src={'logoGobierno.png'}
                 height={'130px'}
-                alt={'Logo ministerio de defensa'}
+                alt={'Logo del Gobierno del Encuentro'}
                 onClick={() => router.push('/')}
                 style={{
                     padding: '5px 5px 5px 12px',
