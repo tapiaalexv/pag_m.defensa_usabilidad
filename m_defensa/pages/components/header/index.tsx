@@ -6,7 +6,7 @@ function Header(){
         <header>
             <img
                 src={'logoMinisterio.png'}
-                height={'110px'}
+                height={'150px'}
                 alt={'Logo ministerio de defensa'}
                 onClick={()=>router.push('/')}
                 style={{

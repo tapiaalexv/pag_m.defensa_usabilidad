@@ -48,7 +48,7 @@ function Footer() {
                     />
                 </div>
                 {/*Parrafo*/}
-                <p style={{lineHeight: '20px', color: "white", textAlign: 'right', marginBottom:'5px'}}>
+                <p style={{lineHeight: '22px', color: "white", textAlign: 'right', marginBottom:'5px'}}>
                     Calle la Exposición S4-71 y Benigno Vela<br/>
                     Código Postal: 170403 / Quito - Ecuador<br/>
                     Teléfono: 593-2 298-3200 / 593-2 295-1951

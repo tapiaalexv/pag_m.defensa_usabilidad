@@ -1,10 +1,10 @@
 import Layout from "./components/layout";
 
-function Noticias(){
+function Certificados(){
     return(
         <Layout>
             <h1>Certificados</h1>
         </Layout>
     )
 }
-export default Noticias;
+export default Certificados;
