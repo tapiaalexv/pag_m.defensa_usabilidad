@@ -88,15 +88,17 @@ const Home: NextPage = () => {
                 <Box>
                     <h1>Destacado</h1>
                 </Box>
-                <Container
-                    sx={{
-                        width: '60%',
-                        height: '60%',
-                        border: 'solid 5px orange',
-                        padding: '0 1.5em 0 1.5em',
-                        textAlign: 'center'
-                    }}
-                >
+
+                <div style={{
+                    position: "relative",
+                    margin: "auto",
+                    width: '60%',
+                    height: '60%',
+                    border: 'solid 5px orange',
+                    padding: '0 1.5em 0 1.5em',
+                    textAlign: 'center'
+                }
+                }>
                     <CarouselProvider
                         naturalSlideWidth={16}
                         naturalSlideHeight={9}
@@ -117,11 +119,26 @@ const Home: NextPage = () => {
                                 <Image hasMasterSpinner={true} src={'noticias/noticia4.png'}/>
                             </Slide>
                         </Slider>
-                        <ButtonBack>Back</ButtonBack>
-                        <ButtonNext>Next</ButtonNext>
+                        <ButtonBack style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '0',
+                            transform: 'translateY(-50%)',
+                        }}>
+                            Back
+                        </ButtonBack>
+                        <ButtonNext style={{
+                            position: 'absolute',
+                            top: '50%',
+                            right: '0',
+                            transform: 'translateY(-50%)',
+                        }}>
+                            Next
+                        </ButtonNext>
                         <DotGroup></DotGroup>
                     </CarouselProvider>
-                </Container>
+                </div>
+
             </Box>
 
             <Box sx={{
