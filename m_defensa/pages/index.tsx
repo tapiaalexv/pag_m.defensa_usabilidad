@@ -1,4 +1,3 @@
-
 import Layout from "./components/layout";
 import {Box, Button, ButtonGroup, Container, Typography} from "@mui/material";
 import React from 'react';
@@ -56,14 +55,14 @@ function Home() {
 
                     <Button
                         sx={{flexDirection: "column",}}
-                        onClick={() => window.open('http://intranet.midena.gob.ec/index.php/inicio')}
+                        onClick={() => window.open('/noticias')}
                     >
                         <img
-                            src={'iconos/intranet.svg'}
-                            alt={'Servicio de intranet'}
+                            src={'iconos/noticias.svg'}
+                            alt={'Noticias'}
                             height={'75'}
                         />
-                        <Typography sx={{color: 'white'}}>Intranet</Typography>
+                        <Typography sx={{color: 'white'}}>Noticias</Typography>
                     </Button>
 
 
@@ -87,10 +86,9 @@ function Home() {
                     <h1>Destacado</h1>
                 </Box>
 
-                <div style={{
+                <Container sx={{
                     position: "relative",
                     margin: "auto",
-                    width: '60%',
                     border: 'solid 5px orange',
                     padding: '0 1.5em 0 1.5em',
                     textAlign: 'center'
@@ -98,7 +96,7 @@ function Home() {
                 }>
                     <CarouselProvider
                         naturalSlideWidth={160}
-                        naturalSlideHeight={87}
+                        naturalSlideHeight={86}
                         totalSlides={4}
                     >
                         <Slider>
@@ -108,7 +106,7 @@ function Home() {
                                 alt="alt"
                                 titulo={"Soy un titulo 1"}
                                 descripcion={"Soy un descripcion 1"}
-                                height={350}
+                                height={500}
                             />
                             <CustomCardSlide
                                 index={1}
@@ -116,7 +114,7 @@ function Home() {
                                 alt="alt"
                                 titulo={"Soy un titulo 2"}
                                 descripcion={"Soy un descripcion 2"}
-                                height={350}
+                                height={500}
                             />
                             <CustomCardSlide
                                 index={2}
@@ -124,7 +122,7 @@ function Home() {
                                 alt="alt"
                                 titulo={"Soy un titulo 3"}
                                 descripcion={"Soy un descripcion 3"}
-                                height={350}
+                                height={500}
                             />
                             <CustomCardSlide
                                 index={3}
@@ -132,7 +130,7 @@ function Home() {
                                 alt="alt"
                                 titulo={"Soy un titulo 4"}
                                 descripcion={"Soy un descripcion 4"}
-                                height={350}
+                                height={500}
                             />
 
                         </Slider>
@@ -141,12 +139,12 @@ function Home() {
                             top: '50%',
                             left: '0',
                             transform: 'translateY(-50%)',
-                            padding:"0",
+                            padding: "0",
                         }}>
-                            <img  src={'iconos/arrow_back.svg'}
-                                  width="50"
-                                  height="50"
-                                  alt={"btnAtras"}
+                            <img src={'iconos/arrow_back.svg'}
+                                 width="50"
+                                 height="50"
+                                 alt={"btnAtras"}
                             />
                         </ButtonBack>
                         <ButtonNext style={{
@@ -154,17 +152,17 @@ function Home() {
                             top: '50%',
                             right: '0',
                             transform: 'translateY(-50%)',
-                            padding:"0",
+                            padding: "0",
                         }}>
-                            <img  src={'iconos/arrow_forward.svg'}
-                                  width="50"
-                                  height="50"
-                                  alt={"btnSiguiente"}
+                            <img src={'iconos/arrow_forward.svg'}
+                                 width="50"
+                                 height="50"
+                                 alt={"btnSiguiente"}
                             />
                         </ButtonNext>
                         <DotGroup/>
                     </CarouselProvider>
-                </div>
+                </Container>
 
             </Box>
 

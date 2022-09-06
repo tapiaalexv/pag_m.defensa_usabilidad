@@ -84,24 +84,22 @@ function Noticias() {
                     </Card>
                 </Box>
 
-
             </Box>
-            <Box sx={{padding: '1em 1.5em 1.5em 1.5em'}}>
+            <Box sx={{padding: '1em 1.5em 1.5em 1.5em', alignItems:'center'}}>
                 <h4>Más Recientes</h4>
                 <hr color="gray"/>
 
-                <div style={{
+                <Box sx={{
                     position: "relative",
                     margin: "auto",
-                    width: '90%',
                     border: 'solid 5px orange',
                     padding: '0 1.5em 0 1.5em',
-                    textAlign: 'center'
+                    textAlign: 'center',
                 }
                 }>
                     <CarouselProvider
-                        naturalSlideWidth={16}
-                        naturalSlideHeight={13}
+                        naturalSlideWidth={160}
+                        naturalSlideHeight={86}
                         totalSlides={4}
                         visibleSlides={3}
                     >
@@ -112,7 +110,7 @@ function Noticias() {
                                 alt="alt"
                                 titulo={"Soy un titulo 1"}
                                 descripcion={"Soy un descripcion 1"}
-                                height={190}
+                                height={200}
                             />
                             <CustomCardSlide
                                 index={1}
@@ -120,7 +118,7 @@ function Noticias() {
                                 alt="alt"
                                 titulo={"Soy un titulo 2"}
                                 descripcion={"Soy un descripcion 2"}
-                                height={190}
+                                height={200}
                             />
                             <CustomCardSlide
                                 index={2}
@@ -128,7 +126,7 @@ function Noticias() {
                                 alt="alt"
                                 titulo={"Soy un titulo 3"}
                                 descripcion={"Soy un descripcion 3"}
-                                height={190}
+                                height={200}
                             />
                             <CustomCardSlide
                                 index={3}
@@ -136,7 +134,7 @@ function Noticias() {
                                 alt="alt"
                                 titulo={"Soy un titulo 4"}
                                 descripcion={"Soy un descripcion 4"}
-                                height={190}
+                                height={200}
                             />
 
                         </Slider>
@@ -145,12 +143,12 @@ function Noticias() {
                             top: '50%',
                             left: '0',
                             transform: 'translateY(-50%)',
-                            padding: "0",
+                            padding:"0",
                         }}>
-                            <img src={'iconos/arrow_back.svg'}
-                                 width="50"
-                                 height="50"
-                                 alt={"btnAtras"}
+                            <img  src={'iconos/arrow_back.svg'}
+                                  width="50"
+                                  height="50"
+                                  alt={"btnAtras"}
                             />
                         </ButtonBack>
                         <ButtonNext style={{
@@ -158,17 +156,17 @@ function Noticias() {
                             top: '50%',
                             right: '0',
                             transform: 'translateY(-50%)',
-                            padding: "0",
+                            padding:"0",
                         }}>
-                            <img src={'iconos/arrow_forward.svg'}
-                                 width="50"
-                                 height="50"
-                                 alt={"btnSiguiente"}
+                            <img  src={'iconos/arrow_forward.svg'}
+                                  width="50"
+                                  height="50"
+                                  alt={"btnSiguiente"}
                             />
                         </ButtonNext>
                         <DotGroup/>
                     </CarouselProvider>
-                </div>
+                </Box>
             </Box>
             <Box sx={{
                 margin: '0 1.5em 1em 1.5em',
