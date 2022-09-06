@@ -107,6 +107,7 @@ function Home() {
                                 titulo={"Soy un titulo 1"}
                                 descripcion={"Soy un descripcion 1"}
                                 height={500}
+                                direc={''}
                             />
                             <CustomCardSlide
                                 index={1}
@@ -115,6 +116,7 @@ function Home() {
                                 titulo={"Soy un titulo 2"}
                                 descripcion={"Soy un descripcion 2"}
                                 height={500}
+                                direc={''}
                             />
                             <CustomCardSlide
                                 index={2}
@@ -123,6 +125,7 @@ function Home() {
                                 titulo={"Soy un titulo 3"}
                                 descripcion={"Soy un descripcion 3"}
                                 height={500}
+                                direc={''}
                             />
                             <CustomCardSlide
                                 index={3}
@@ -131,6 +134,7 @@ function Home() {
                                 titulo={"Soy un titulo 4"}
                                 descripcion={"Soy un descripcion 4"}
                                 height={500}
+                                direc={''}
                             />
 
                         </Slider>

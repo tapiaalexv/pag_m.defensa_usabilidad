@@ -122,34 +122,38 @@ function Noticias() {
                             <CustomCardSlide
                                 index={0}
                                 source={'noticias/noticia1.jpg'}
-                                alt="alt"
-                                titulo={"Soy un titulo 1"}
-                                descripcion={"Soy un descripcion 1"}
+                                alt="Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida institucional"
+                                titulo={"Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida institucional"}
+                                descripcion={''}
                                 height={200}
+                                direc={'https://www.defensa.gob.ec/instituto-de-seguridad-social-de-las-fuerzas-armadas-conmemoro-30-anos-de-vida-institucional/'}
                             />
                             <CustomCardSlide
                                 index={1}
                                 source={'noticias/noticia2.jpeg'}
-                                alt="alt"
-                                titulo={"Soy un titulo 2"}
-                                descripcion={"Soy un descripcion 2"}
+                                alt="El fortalecimiento de la paz y la seguridad ciudadana son prioridades para el Ministerio de Defensa Nacional"
+                                titulo={"El fortalecimiento de la paz y la seguridad ciudadana son prioridades para el Ministerio de Defensa Nacional"}
+                                descripcion={''}
                                 height={200}
+                                direc={'https://www.defensa.gob.ec/el-fortalecimiento-de-la-paz-y-la-seguridad-ciudadana-son-prioridades-para-el-ministerio-de-defensa-nacional/'}
                             />
                             <CustomCardSlide
                                 index={2}
                                 source={'noticias/noticia3.jpeg'}
-                                alt="alt"
-                                titulo={"Soy un titulo 3"}
-                                descripcion={"Soy un descripcion 3"}
+                                alt="Ceremonia de posesión del nuevo Mando Militar"
+                                titulo={"Ceremonia de posesión del nuevo Mando Militar\n"}
+                                descripcion={""}
                                 height={200}
+                                direc={'https://www.defensa.gob.ec/ceremonia-de-posesion-del-nuevo-mando-militar/'}
                             />
                             <CustomCardSlide
                                 index={3}
                                 source={'noticias/noticia4.png'}
-                                alt="alt"
-                                titulo={"Soy un titulo 4"}
-                                descripcion={"Soy un descripcion 4"}
+                                alt="Sentencia de 03 de junio de 2021 relativa al caso Grijalva Bueno Vs. Ecuador"
+                                titulo={"Sentencia de 03 de junio de 2021 relativa al caso Grijalva Bueno Vs. Ecuador \n"}
+                                descripcion={""}
                                 height={200}
+                                direc={'https://www.defensa.gob.ec/wp-content/uploads/downloads/2021/09/sentencia_ddhh_grijalva_bueno_vs_ecuador_24_sep_2021.pdf'}
                             />
 
                         </Slider>
