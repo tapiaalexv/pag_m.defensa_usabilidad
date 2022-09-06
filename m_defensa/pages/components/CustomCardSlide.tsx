@@ -11,7 +11,7 @@ const CustomCardSlide = ({index, source, alt, titulo, descripcion, height, direc
             <Card>
                 <CardActionArea
                     // @ts-ignore
-                    onClick={() => window.open({direc})}>
+                    onClick={() => window.open(direc)}>
                     <CardMedia
                         component="img"
                         image={source}

@@ -126,7 +126,7 @@ function Noticias() {
                                 titulo={"Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida institucional"}
                                 descripcion={''}
                                 height={200}
-                                direc={'https://www.defensa.gob.ec/instituto-de-seguridad-social-de-las-fuerzas-armadas-conmemoro-30-anos-de-vida-institucional/'}
+                                direc='https://www.defensa.gob.ec/instituto-de-seguridad-social-de-las-fuerzas-armadas-conmemoro-30-anos-de-vida-institucional/'
                             />
                             <CustomCardSlide
                                 index={1}
