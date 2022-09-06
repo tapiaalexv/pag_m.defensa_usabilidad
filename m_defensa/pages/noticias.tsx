@@ -107,14 +107,13 @@ function Noticias() {
                     sx={{
                     position: "relative",
                     margin: "auto",
-                    border: 'solid 5px orange',
                     padding: '0 1.5em 0 1.5em',
                     textAlign: 'center',
                 }
                 }>
                     <CarouselProvider
                         naturalSlideWidth={160}
-                        naturalSlideHeight={140}
+                        naturalSlideHeight={120}
                         totalSlides={4}
                         visibleSlides={3}
                     >
@@ -123,8 +122,10 @@ function Noticias() {
                                 index={0}
                                 source={'noticias/noticia1.jpg'}
                                 alt="Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida institucional"
-                                titulo={"Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida institucional"}
+                                titulo={"Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida"}
                                 descripcion={''}
+                                sizeTitle={'subtitle2'}
+                                sizeBody={'body2'}
                                 height={200}
                                 direc='https://www.defensa.gob.ec/instituto-de-seguridad-social-de-las-fuerzas-armadas-conmemoro-30-anos-de-vida-institucional/'
                             />
@@ -132,8 +133,10 @@ function Noticias() {
                                 index={1}
                                 source={'noticias/noticia2.jpeg'}
                                 alt="El fortalecimiento de la paz y la seguridad ciudadana son prioridades para el Ministerio de Defensa Nacional"
-                                titulo={"El fortalecimiento de la paz y la seguridad ciudadana son prioridades para el Ministerio de Defensa Nacional"}
+                                titulo={"El fortalecimiento de la paz y la seguridad ciudadana son prioridades"}
                                 descripcion={''}
+                                sizeTitle={'subtitle2'}
+                                sizeBody={'body2'}
                                 height={200}
                                 direc={'https://www.defensa.gob.ec/el-fortalecimiento-de-la-paz-y-la-seguridad-ciudadana-son-prioridades-para-el-ministerio-de-defensa-nacional/'}
                             />
@@ -143,6 +146,8 @@ function Noticias() {
                                 alt="Ceremonia de posesión del nuevo Mando Militar"
                                 titulo={"Ceremonia de posesión del nuevo Mando Militar\n"}
                                 descripcion={""}
+                                sizeTitle={'subtitle2'}
+                                sizeBody={'body2'}
                                 height={200}
                                 direc={'https://www.defensa.gob.ec/ceremonia-de-posesion-del-nuevo-mando-militar/'}
                             />
@@ -152,6 +157,8 @@ function Noticias() {
                                 alt="Sentencia de 03 de junio de 2021 relativa al caso Grijalva Bueno Vs. Ecuador"
                                 titulo={"Sentencia de 03 de junio de 2021 relativa al caso Grijalva Bueno Vs. Ecuador \n"}
                                 descripcion={""}
+                                sizeTitle={'subtitle2'}
+                                sizeBody={'body2'}
                                 height={200}
                                 direc={'https://www.defensa.gob.ec/wp-content/uploads/downloads/2021/09/sentencia_ddhh_grijalva_bueno_vs_ecuador_24_sep_2021.pdf'}
                             />

@@ -5,7 +5,7 @@ import Card from '@mui/material/Card';
 import {Container, CardActionArea, CardContent, CardMedia, Typography} from "@mui/material";
 
 // @ts-ignore
-const CustomCardSlide = ({index, source, alt, titulo, descripcion, height, direc}) => (
+const CustomCardSlide = ({index, source, alt, titulo, descripcion, height, direc,sizeTitle, sizeBody}) => (
     <Slide index={index}>
         <Container>
             <Card>
@@ -19,10 +19,10 @@ const CustomCardSlide = ({index, source, alt, titulo, descripcion, height, direc
                         height={height}
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="subtitle2" component="div" sx={{fontWeight:'bold'}}>
+                        <Typography gutterBottom variant={sizeTitle} component="div" sx={{fontWeight:'bold'}}>
                             {titulo}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography variant={sizeBody} color="text.secondary">
                             {descripcion}
                         </Typography>
                     </CardContent>
