@@ -1,5 +1,15 @@
 import Layout from "./components/layout";
-import {Box, Button, ButtonGroup, Container, Typography} from "@mui/material";
+import {
+    Box,
+    Button,
+    ButtonGroup,
+    Card,
+    CardActionArea,
+    CardMedia,
+    CardContent,
+    Container,
+    Typography
+} from "@mui/material";
 import React from "react";
 import {ButtonBack, ButtonNext, CarouselProvider, DotGroup, Image, Slide, Slider} from "pure-react-carousel";
 import 'pure-react-carousel/dist/react-carousel.es.css';
@@ -12,82 +22,69 @@ function Noticias() {
                 <h1 style={{paddingBottom: '2px'}}>Noticias</h1>
                 <h4>Más Destacadas</h4>
                 <hr color="gray"/>
-                <Box sx={{display: 'flex', justifyContent: 'space-around'}}>
-                    <Box
-                        sx={{
-                            background: '#527D66',
-                            width: '42.5%',
-                            padding: '1em'
-                        }}
-                    >
-                        <Button
-                            sx={{
-                                flexDirection: "column",
-                                textTransform: 'none',
-                            }}
-                            onClick={() => window.open('https://www.defensa.gob.ec/primera-fase-de-remediacion-en-zaruma-fue-entregada/')}
-                        >
-                            <Typography
-                                variant={'subtitle1'}
-                                sx={{color: 'white', fontWeight: 'bold', marginBottom: '0.70em'}}
-                            >
-                                Primera fase de remediación en Zaruma fue entregada
-                            </Typography>
-                            <img
-                                src={'https://www.defensa.gob.ec/wp-content/uploads/2022/09/Primera-fase-de-remediacion-en-Zaruma-fue-entregada02.jpeg'}
-                                alt={'Noticia - Primera fase de remediación en Zaruma fue entregada'}
-                                height={'200'}
-                                width={'65%'}
+                <Box sx={{margin: '0 1em 0 1em', display: 'flex', justifyContent: 'space-around'}}>
+                    <Card sx={{width: '42.5%', background: '#527D66'}}>
+                        <CardActionArea onClick={() => window.open('https://www.defensa.gob.ec/primera-fase-de-remediacion-en-zaruma-fue-entregada/')}>
+                            <CardMedia
+                                component="img"
+                                height="400"
+                                image="https://www.defensa.gob.ec/wp-content/uploads/2022/09/Primera-fase-de-remediacion-en-Zaruma-fue-entregada02.jpeg"
+                                alt="Noticia - Primera fase de remediación en Zaruma fue entregada"
                             />
-                            <Typography
-                                variant={'body2'}
-                                sx={{color: 'white', textAlign: 'justify', marginTop: '0.70em'}}
-                            >
-                                El presidente de la República, Guillermo Lasso, junto al Ministro de Defensa Nacional,
-                                Grad. Luis Lara y varias autoridades, asistieron al acto de entrega de la primera fase
-                                de la regeneración urbana del socavón en Zaruma.
-                            </Typography>
-                        </Button>
-                    </Box>
-
-                    <Box
-                        sx={{
-                            background: '#527D66',
-                            width: '42.5%',
-                            padding: '1em'
-                        }}
-                    >
-                        <Button
-                            sx={{
-                                flexDirection: "column",
-                                textTransform: 'none',
-                            }}
-                            onClick={() => window.open('https://www.defensa.gob.ec/instituto-de-seguridad-social-de-las-fuerzas-armadas-conmemoro-30-anos-de-vida-institucional/')}
-                        >
-                            <Typography
-                                variant={'subtitle1'}
-                                sx={{color: 'white', fontWeight: 'bold', marginBottom: '0.70em'}}
-                            >
-                                Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida
-                                institucional
-                            </Typography>
-                            <img
-                                src={'https://www.defensa.gob.ec/wp-content/uploads/2022/08/Instituto-de-Seguridad-Social-de-las-Fuerzas-Armadas-conmemoro-30-anos-de-vida-institucional01.jpeg'}
-                                alt={'Noticia - Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida institucional'}
-                                height={'200'}
-                                width={'65%'}
+                            <CardContent>
+                                <Typography
+                                    gutterBottom
+                                    variant="h5"
+                                    component="div"
+                                    sx={{color: 'white', fontWeight: 'bold', marginBottom: '0.70em',textAlign: 'center'}}
+                                >
+                                    Primera fase de remediación en Zaruma fue entregada
+                                </Typography>
+                                <Typography
+                                    variant="body2"
+                                    color="text.secondary"
+                                    sx={{color: 'white', textAlign: 'justify', marginTop: '0.70em'}}
+                                >
+                                    El presidente de la República, Guillermo Lasso, junto al Ministro de Defensa Nacional,
+                                    Grad. Luis Lara y varias autoridades, asistieron al acto de entrega de la primera fase
+                                    de la regeneración urbana del socavón en Zaruma.
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+                    <Card sx={{width: '42.5%', background: '#527D66'}}>
+                        <CardActionArea onClick={() => window.open('https://www.defensa.gob.ec/instituto-de-seguridad-social-de-las-fuerzas-armadas-conmemoro-30-anos-de-vida-institucional/')}>
+                            <CardMedia
+                                component="img"
+                                height="400"
+                                image="https://www.defensa.gob.ec/wp-content/uploads/2022/08/Instituto-de-Seguridad-Social-de-las-Fuerzas-Armadas-conmemoro-30-anos-de-vida-institucional01.jpeg"
+                                alt="Noticia - Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida institucional"
                             />
-                            <Typography
-                                variant={'body2'}
-                                sx={{color: 'white', textAlign: 'justify', marginTop: '0.70em'}}
-                            >
-                                El pasado viernes 26 de agosto, en las instalaciones del Instituto Geográfico
-                                Militar “IGM” en Quito, se realizó la ceremonia conmemorativa por los 30 años
-                                de vida institucional del Instituto de Seguridad Social de las Fuerzas Armadas, ISSFA.
-                            </Typography>
-                        </Button>
-                    </Box>
+                            <CardContent>
+                                <Typography
+                                    gutterBottom
+                                    variant="h5"
+                                    component="div"
+                                    sx={{color: 'white', fontWeight: 'bold', marginBottom: '0.70em',textAlign: 'center'}}
+                                >
+                                    Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida
+                                    institucional
+                                </Typography>
+                                <Typography
+                                    variant="body2"
+                                    color="text.secondary"
+                                    sx={{color: 'white', textAlign: 'justify', marginTop: '0.70em'}}
+                                >
+                                    El pasado viernes 26 de agosto, en las instalaciones del Instituto Geográfico
+                                    Militar “IGM” en Quito, se realizó la ceremonia conmemorativa por los 30 años
+                                    de vida institucional del Instituto de Seguridad Social de las Fuerzas Armadas, ISSFA.
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
                 </Box>
+
+
             </Box>
             <Box sx={{padding: '1em 1.5em 1.5em 1.5em'}}>
                 <h4>Más Recientes</h4>
@@ -148,12 +145,12 @@ function Noticias() {
                             top: '50%',
                             left: '0',
                             transform: 'translateY(-50%)',
-                            padding:"0",
+                            padding: "0",
                         }}>
-                            <img  src={'iconos/arrow_back.svg'}
-                                  width="50"
-                                  height="50"
-                                  alt={"btnAtras"}
+                            <img src={'iconos/arrow_back.svg'}
+                                 width="50"
+                                 height="50"
+                                 alt={"btnAtras"}
                             />
                         </ButtonBack>
                         <ButtonNext style={{
@@ -161,12 +158,12 @@ function Noticias() {
                             top: '50%',
                             right: '0',
                             transform: 'translateY(-50%)',
-                            padding:"0",
+                            padding: "0",
                         }}>
-                            <img  src={'iconos/arrow_forward.svg'}
-                                  width="50"
-                                  height="50"
-                                  alt={"btnSiguiente"}
+                            <img src={'iconos/arrow_forward.svg'}
+                                 width="50"
+                                 height="50"
+                                 alt={"btnSiguiente"}
                             />
                         </ButtonNext>
                         <DotGroup/>
