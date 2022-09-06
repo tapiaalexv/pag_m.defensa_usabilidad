@@ -4,7 +4,7 @@ import React from "react";
 
 function Certificados() {
     return (
-        <Layout>
+        <Layout titulo={'Certificados en línea - Ministerio de Defensa del Ecuador'}>
             <Box sx={{padding: '0.5em 1.5em 0 1.5em'}}>
                 <h1 style={{paddingBottom: '2px'}}>Certificados en línea</h1>
                 <Container sx={{display: 'flex', justifyContent: 'space-around'}}>
@@ -20,7 +20,7 @@ function Certificados() {
                     >
                         <img
                             src={'iconos/medalla.svg'}
-                            alt={'Certificado de pertenencia a fuerzas armadas'}
+                            alt={'Ícoono de Certificado de pertenencia a fuerzas armadas'}
                             height={'150'}
                         />
                         <Typography sx={{color: 'black'}}>Certificado de Pertenecia a Fuerzas Armadas</Typography>
@@ -37,7 +37,7 @@ function Certificados() {
                     >
                         <img
                             src={'iconos/liquidaciones.svg'}
-                            alt={'Liquidaciones del tiempo de servicio'}
+                            alt={'Ícoono de Liquidaciones del tiempo de servicio'}
                             height={'150'}
                         />
                         <Typography sx={{color: 'black'}}>Liquidaciones del Tiempo de Servicio</Typography>
@@ -57,7 +57,7 @@ function Certificados() {
                     >
                         <img
                             src={'iconos/pregunta.svg'}
-                            alt={'Preguntas frecuentes'}
+                            alt={'Ícoono de Preguntas frecuentes'}
                             height={'100'}
                         />
                         <Typography sx={{color: 'black'}}>Preguntas frecuentes</Typography>
@@ -72,7 +72,7 @@ function Certificados() {
                     >
                         <img
                             src={'iconos/manual.svg'}
-                            alt={'Manual de usuario'}
+                            alt={'Ícoono del Manual de usuario'}
                             height={'100'}
                         />
                         <Typography sx={{color: 'black'}}>Manual de usuario</Typography>

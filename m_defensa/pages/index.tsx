@@ -10,10 +10,11 @@ import {
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import CustomCardSlide from "./components/CustomCardSlide";
+import {Helmet} from "react-helmet";
 
 function Home() {
     return (
-        <Layout>
+        <Layout titulo={'Página Oficial - Ministerio de Defensa del Ecuador'}>
             <Box sx={{padding: '0.5em 1.5em 0 1.5em'}}>
                 <h1 style={{paddingBottom: '2px'}}>Servicios</h1>
                 <Box sx={{background: '#527D66', display: 'flex', justifyContent: 'space-around'}}>
@@ -23,7 +24,7 @@ function Home() {
                     >
                         <img
                             src={'iconos/transparencia.svg'}
-                            alt={'Servicio de transparencia'}
+                            alt={'Ícono de Servicio de transparencia'}
                             height={'75'}
                         />
                         <Typography sx={{color: 'white'}}>Transparencia</Typography>
@@ -35,7 +36,7 @@ function Home() {
                     >
                         <img
                             src={'iconos/certificados.svg'}
-                            alt={'Servicio de certificados en línea'}
+                            alt={'Ícono de Servicio de certificados en línea'}
                             height={'75'}
                         />
                         <Typography sx={{color: 'white'}}>Certificados en línea</Typography>
@@ -47,7 +48,7 @@ function Home() {
                     >
                         <img
                             src={'iconos/contacto.svg'}
-                            alt={'Servicio de contacto ciudadano'}
+                            alt={'Ícono de Servicio de contacto ciudadano'}
                             height={'75'}
                         />
                         <Typography sx={{color: 'white'}}>Contacto Ciudadano</Typography>
@@ -59,7 +60,7 @@ function Home() {
                     >
                         <img
                             src={'iconos/noticias.svg'}
-                            alt={'Noticias'}
+                            alt={'Ícono de Servicio de Noticias'}
                             height={'75'}
                         />
                         <Typography sx={{color: 'white'}}>Noticias</Typography>
@@ -72,7 +73,7 @@ function Home() {
                     >
                         <img
                             src={'iconos/correo.svg'}
-                            alt={'Servicio de correo zimbra'}
+                            alt={'Ícono de Servicio de correo zimbra'}
                             height={'75'}
                         />
                         <Typography sx={{color: 'white'}}>Correo Zimbra</Typography>
@@ -102,7 +103,7 @@ function Home() {
                             <CustomCardSlide
                                 index={0}
                                 source={'noticias/noticia1.jpg'}
-                                alt="Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida institucional"
+                                alt="Imagen de la noticia de conmemoración 30 años de vida institucional"
                                 titulo={"Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida institucional"}
                                 descripcion={''}
                                 sizeTitle={'h5'}
@@ -113,7 +114,7 @@ function Home() {
                             <CustomCardSlide
                                 index={1}
                                 source={'noticias/noticia2.jpeg'}
-                                alt="El fortalecimiento de la paz y la seguridad ciudadana son prioridades para el Ministerio de Defensa Nacional"
+                                alt="Imagen de la noticia del fortalecimiento de la paz y la seguridad ciudadana"
                                 titulo={"El fortalecimiento de la paz y la seguridad ciudadana son prioridades para el Ministerio de Defensa Nacional"}
                                 descripcion={''}
                                 sizeTitle={'h5'}
@@ -124,7 +125,7 @@ function Home() {
                             <CustomCardSlide
                                 index={2}
                                 source={'noticias/noticia3.jpeg'}
-                                alt="Ceremonia de posesión del nuevo Mando Militar"
+                                alt="Imagen de la noticia de Ceremonia de posesión del nuevo Mando Militar"
                                 titulo={"Ceremonia de posesión del nuevo Mando Militar"}
                                 descripcion={""}
                                 sizeTitle={'h5'}
@@ -135,7 +136,7 @@ function Home() {
                             <CustomCardSlide
                                 index={3}
                                 source={'noticias/noticia4.png'}
-                                alt="Sentencia de 03 de junio de 2021 relativa al caso Grijalva Bueno Vs. Ecuador"
+                                alt="Imagen de la noticia de sentencia de 03 de junio de 2021"
                                 titulo={"Sentencia de 03 de junio de 2021 relativa al caso Grijalva Bueno Vs. Ecuador"}
                                 descripcion={""}
                                 sizeTitle={'h5'}

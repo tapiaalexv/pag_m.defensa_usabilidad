@@ -17,7 +17,7 @@ import CustomCardSlide from "./components/CustomCardSlide";
 
 function Noticias() {
     return (
-        <Layout>
+        <Layout titulo={'Noticias - Ministerio de Defensa del Ecuador'}>
             <Box sx={{padding: '0.5em 1.5em 0 1.5em'}}>
                 <h1 style={{paddingBottom: '2px'}}>Noticias</h1>
                 <h4>Más Destacadas</h4>
@@ -30,7 +30,7 @@ function Noticias() {
                                 component="img"
                                 height="400"
                                 image="https://www.defensa.gob.ec/wp-content/uploads/2022/09/Primera-fase-de-remediacion-en-Zaruma-fue-entregada02.jpeg"
-                                alt="Noticia - Primera fase de remediación en Zaruma fue entregada"
+                                alt="Imagen de la noticia de remediación en Zaruma"
                             />
                             <CardContent>
                                 <Typography
@@ -67,7 +67,7 @@ function Noticias() {
                                 component="img"
                                 height="400"
                                 image="https://www.defensa.gob.ec/wp-content/uploads/2022/08/Instituto-de-Seguridad-Social-de-las-Fuerzas-Armadas-conmemoro-30-anos-de-vida-institucional01.jpeg"
-                                alt="Noticia - Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida institucional"
+                                alt="Imagen de la noticia de conmemoración 30 años de vida institucional"
                             />
                             <CardContent>
                                 <Typography
@@ -121,7 +121,7 @@ function Noticias() {
                             <CustomCardSlide
                                 index={0}
                                 source={'noticias/noticia1.jpg'}
-                                alt="Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida institucional"
+                                alt="Imagen de la noticia de conmemoración 30 años de vida institucional"
                                 titulo={"Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida"}
                                 descripcion={''}
                                 sizeTitle={'subtitle2'}
@@ -132,7 +132,7 @@ function Noticias() {
                             <CustomCardSlide
                                 index={1}
                                 source={'noticias/noticia2.jpeg'}
-                                alt="El fortalecimiento de la paz y la seguridad ciudadana son prioridades para el Ministerio de Defensa Nacional"
+                                alt="Imagen de la noticia de fortalecimiento de la paz y la seguridad ciudadana"
                                 titulo={"El fortalecimiento de la paz y la seguridad ciudadana son prioridades"}
                                 descripcion={''}
                                 sizeTitle={'subtitle2'}
@@ -143,7 +143,7 @@ function Noticias() {
                             <CustomCardSlide
                                 index={2}
                                 source={'noticias/noticia3.jpeg'}
-                                alt="Ceremonia de posesión del nuevo Mando Militar"
+                                alt="Imagen de la noticia de Ceremonia de posesión del nuevo Mando Militar"
                                 titulo={"Ceremonia de posesión del nuevo Mando Militar\n"}
                                 descripcion={""}
                                 sizeTitle={'subtitle2'}
@@ -154,7 +154,7 @@ function Noticias() {
                             <CustomCardSlide
                                 index={3}
                                 source={'noticias/noticia4.png'}
-                                alt="Sentencia de 03 de junio de 2021 relativa al caso Grijalva Bueno Vs. Ecuador"
+                                alt="Imagen de la noticia de sentencia de 03 de junio de 2021"
                                 titulo={"Sentencia de 03 de junio de 2021 relativa al caso Grijalva Bueno Vs. Ecuador \n"}
                                 descripcion={""}
                                 sizeTitle={'subtitle2'}
