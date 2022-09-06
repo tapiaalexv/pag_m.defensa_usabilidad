@@ -2,14 +2,12 @@ import PropTypes from "prop-types";
 import {Slide} from "pure-react-carousel";
 import React from "react";
 import Card from '@mui/material/Card';
-import {Box,CardActions, CardContent, CardMedia, Typography} from "@mui/material";
+import {Container, CardContent, CardMedia, Typography} from "@mui/material";
 
 // @ts-ignore
 const CustomCardSlide = ({index, source, alt, titulo, descripcion, height}) => (
     <Slide index={index}>
-        <Box sx={{
-            height: "80vh"
-        }}>
+        <Container>
             <Card>
                 <CardMedia
                     component="img"
@@ -26,7 +24,7 @@ const CustomCardSlide = ({index, source, alt, titulo, descripcion, height}) => (
                     </Typography>
                 </CardContent>
             </Card>
-        </Box>
+        </Container>
     </Slide>
 );
 
