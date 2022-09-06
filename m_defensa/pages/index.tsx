@@ -1,18 +1,16 @@
-import type {NextPage} from 'next'
+
 import Layout from "./components/layout";
 import {Box, Button, ButtonGroup, Container, Typography} from "@mui/material";
 import React from 'react';
 import {
     CarouselProvider,
     Slider,
-    Slide,
     ButtonBack,
     ButtonNext,
-    ImageWithZoom,
-    ButtonFirst,
-    ButtonLast, DotGroup, Image
+    DotGroup,
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import CustomCardSlide from "./components/CustomCardSlide";
 
 function Home() {
     return (
@@ -93,49 +91,78 @@ function Home() {
                     position: "relative",
                     margin: "auto",
                     width: '60%',
-                    height: '60%',
                     border: 'solid 5px orange',
                     padding: '0 1.5em 0 1.5em',
                     textAlign: 'center'
                 }
                 }>
                     <CarouselProvider
-                        naturalSlideWidth={16}
-                        naturalSlideHeight={9}
+                        naturalSlideWidth={160}
+                        naturalSlideHeight={87}
                         totalSlides={4}
                     >
                         <Slider>
-                            <Slide index={0}>
-                                <Image hasMasterSpinner={true} src={'noticias/noticia1.jpg'}/>
-                                hola asdasdasd
-                            </Slide>
-                            <Slide index={1}>
-                                <Image hasMasterSpinner={true} src={'noticias/noticia2.jpeg'}/>
-                            </Slide>
-                            <Slide index={2}>
-                                <Image hasMasterSpinner={true} src={'noticias/noticia3.jpeg'}/>
-                            </Slide>
-                            <Slide index={3}>
-                                <Image hasMasterSpinner={true} src={'noticias/noticia4.png'}/>
-                            </Slide>
+                            <CustomCardSlide
+                                index={0}
+                                source={'noticias/noticia1.jpg'}
+                                alt="alt"
+                                titulo={"Soy un titulo 1"}
+                                descripcion={"Soy un descripcion 1"}
+                                height={350}
+                            />
+                            <CustomCardSlide
+                                index={1}
+                                source={'noticias/noticia2.jpeg'}
+                                alt="alt"
+                                titulo={"Soy un titulo 2"}
+                                descripcion={"Soy un descripcion 2"}
+                                height={350}
+                            />
+                            <CustomCardSlide
+                                index={2}
+                                source={'noticias/noticia3.jpeg'}
+                                alt="alt"
+                                titulo={"Soy un titulo 3"}
+                                descripcion={"Soy un descripcion 3"}
+                                height={350}
+                            />
+                            <CustomCardSlide
+                                index={3}
+                                source={'noticias/noticia4.png'}
+                                alt="alt"
+                                titulo={"Soy un titulo 4"}
+                                descripcion={"Soy un descripcion 4"}
+                                height={350}
+                            />
+
                         </Slider>
                         <ButtonBack style={{
                             position: 'absolute',
                             top: '50%',
                             left: '0',
                             transform: 'translateY(-50%)',
+                            padding:"0",
                         }}>
-                            Back
+                            <img  src={'iconos/arrow_back.svg'}
+                                  width="50"
+                                  height="50"
+                                  alt={"btnAtras"}
+                            />
                         </ButtonBack>
                         <ButtonNext style={{
                             position: 'absolute',
                             top: '50%',
                             right: '0',
                             transform: 'translateY(-50%)',
+                            padding:"0",
                         }}>
-                            Next
+                            <img  src={'iconos/arrow_forward.svg'}
+                                  width="50"
+                                  height="50"
+                                  alt={"btnSiguiente"}
+                            />
                         </ButtonNext>
-                        <DotGroup></DotGroup>
+                        <DotGroup/>
                     </CarouselProvider>
                 </div>
 

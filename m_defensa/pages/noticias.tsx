@@ -1,6 +1,9 @@
 import Layout from "./components/layout";
 import {Box, Button, ButtonGroup, Container, Typography} from "@mui/material";
 import React from "react";
+import {ButtonBack, ButtonNext, CarouselProvider, DotGroup, Image, Slide, Slider} from "pure-react-carousel";
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import CustomCardSlide from "./components/CustomCardSlide";
 
 function Noticias() {
     return (
@@ -65,7 +68,8 @@ function Noticias() {
                                 variant={'subtitle1'}
                                 sx={{color: 'white', fontWeight: 'bold', marginBottom: '0.70em'}}
                             >
-                                Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida institucional
+                                Instituto de Seguridad Social de las Fuerzas Armadas conmemoró 30 años de vida
+                                institucional
                             </Typography>
                             <img
                                 src={'https://www.defensa.gob.ec/wp-content/uploads/2022/08/Instituto-de-Seguridad-Social-de-las-Fuerzas-Armadas-conmemoro-30-anos-de-vida-institucional01.jpeg'}
@@ -88,7 +92,86 @@ function Noticias() {
             <Box sx={{padding: '1em 1.5em 1.5em 1.5em'}}>
                 <h4>Más Recientes</h4>
                 <hr color="gray"/>
-                
+
+                <div style={{
+                    position: "relative",
+                    margin: "auto",
+                    width: '90%',
+                    border: 'solid 5px orange',
+                    padding: '0 1.5em 0 1.5em',
+                    textAlign: 'center'
+                }
+                }>
+                    <CarouselProvider
+                        naturalSlideWidth={16}
+                        naturalSlideHeight={13}
+                        totalSlides={4}
+                        visibleSlides={3}
+                    >
+                        <Slider>
+                            <CustomCardSlide
+                                index={0}
+                                source={'noticias/noticia1.jpg'}
+                                alt="alt"
+                                titulo={"Soy un titulo 1"}
+                                descripcion={"Soy un descripcion 1"}
+                                height={190}
+                            />
+                            <CustomCardSlide
+                                index={1}
+                                source={'noticias/noticia2.jpeg'}
+                                alt="alt"
+                                titulo={"Soy un titulo 2"}
+                                descripcion={"Soy un descripcion 2"}
+                                height={190}
+                            />
+                            <CustomCardSlide
+                                index={2}
+                                source={'noticias/noticia3.jpeg'}
+                                alt="alt"
+                                titulo={"Soy un titulo 3"}
+                                descripcion={"Soy un descripcion 3"}
+                                height={190}
+                            />
+                            <CustomCardSlide
+                                index={3}
+                                source={'noticias/noticia4.png'}
+                                alt="alt"
+                                titulo={"Soy un titulo 4"}
+                                descripcion={"Soy un descripcion 4"}
+                                height={190}
+                            />
+
+                        </Slider>
+                        <ButtonBack style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '0',
+                            transform: 'translateY(-50%)',
+                            padding:"0",
+                        }}>
+                            <img  src={'iconos/arrow_back.svg'}
+                                  width="50"
+                                  height="50"
+                                  alt={"btnAtras"}
+                            />
+                        </ButtonBack>
+                        <ButtonNext style={{
+                            position: 'absolute',
+                            top: '50%',
+                            right: '0',
+                            transform: 'translateY(-50%)',
+                            padding:"0",
+                        }}>
+                            <img  src={'iconos/arrow_forward.svg'}
+                                  width="50"
+                                  height="50"
+                                  alt={"btnSiguiente"}
+                            />
+                        </ButtonNext>
+                        <DotGroup/>
+                    </CarouselProvider>
+                </div>
             </Box>
             <Box sx={{
                 margin: '0 1.5em 1em 1.5em',
