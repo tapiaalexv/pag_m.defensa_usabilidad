@@ -14,7 +14,7 @@ import {
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-function Home(){
+function Home() {
     return (
         <Layout>
             <Box sx={{padding: '0.5em 1.5em 0 1.5em'}}>
@@ -146,23 +146,23 @@ function Home(){
             }}>
                 <ButtonGroup
                     variant="text" aria-label="outlined primary button group" fullWidth={true}
-                    sx={{backgroundColor:'#f8f8f8',border:'solid 1px #cecece'}}
+                    sx={{backgroundColor: '#f8f8f8', border: 'solid 1px #cecece'}}
                 >
                     <Button
-                        sx={{textTransform: 'none', color: 'black',fontWeight:'bold'}}
-                        onClick={()=>window.open('https://www.trabajo.gob.ec/sistema-contacto-ciudadano-mantenimiento/')}
+                        sx={{textTransform: 'none', color: 'black', fontWeight: 'bold'}}
+                        onClick={() => window.open('https://www.trabajo.gob.ec/sistema-contacto-ciudadano-mantenimiento/')}
                     >
                         Contacto Ciudadano
                     </Button>
                     <Button
-                        sx={{textTransform: 'none', color: 'black',fontWeight:'bold'}}
-                        onClick={()=>window.open('https://www.gob.ec')}
+                        sx={{textTransform: 'none', color: 'black', fontWeight: 'bold'}}
+                        onClick={() => window.open('https://www.gob.ec')}
                     >
                         Portal trámites ciudadanos
                     </Button>
                     <Button
-                        sx={{textTransform: 'none', color: 'black',fontWeight:'bold'}}
-                        onClick={()=>window.open('https://sni.gob.ec/inicio')}
+                        sx={{textTransform: 'none', color: 'black', fontWeight: 'bold'}}
+                        onClick={() => window.open('https://sni.gob.ec/inicio')}
                     >
                         Sistema Nacional de Información (SNI)
                     </Button>
